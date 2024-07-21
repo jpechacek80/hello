@@ -4,16 +4,16 @@ CC = g++
 LDLIBS = -lstdc++ -lm
 
 SRC = $(wildcard *.cpp)
-OBJS = $(SRC:.cpp=.o)
-DEPS  = $(SRC:.cpp=.h)
-OUT      = main
+OBJ = $(SRC:.cpp=.o)
+DEP = $(SRC:.cpp=.h)
+OUT = main
 
-$(OBJS): $(SRC) 
-#	$(CC) -o $@ $^ 
+ $(OUT): $(OBJ)
+		$(CC) $^ -o $(OUT) 
 
- main: $(OBJS)
- # $(CC) -o main $(OBJS) 
+$(OBJ): $(SRC) 
+		$(CC) -c $^ 
 
 .PHONY: clean
 clean:
-	rm -f $(OBJS) $(OUT)
+	rm -f $(OBJ) $(OUT)

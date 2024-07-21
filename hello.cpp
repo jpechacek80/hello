@@ -3,9 +3,9 @@
 #include "hello.h"
 
 Sayhello::Sayhello()
-  {std::cout << "HelloWorld!";}
+  {std::cout << "HelloWorld!\n";}
 void Sayhello::Bye()
-  {std::cout << "Goodbye!";}
+  {std::cout << "Goodbye!\n";}
 
 
 
