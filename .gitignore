@@ -5,3 +5,6 @@ script
 bin/
 tags
 
+/Default/
+/Release/
+/Debug/

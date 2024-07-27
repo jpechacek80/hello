@@ -1,10 +1,10 @@
+//main_Exec.cpp
 //main.cpp
 #include "hello.h"
 
 int main()
 {
   Sayhello greeting;
-  greeting.Bye();
-  greeting.Bye();
+  greeting.Version();
   return 0;
  }

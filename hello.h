@@ -2,8 +2,8 @@
 #pragma once
 
 class Sayhello
-{
-public: 
-Sayhello();
-void Bye();
-};
+    {
+public:
+    Sayhello();
+    void Version();
+    };
